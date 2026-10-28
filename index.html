@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aula de HTML, CSS e JS</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="imagens/graos.png">
 </head>
 <body>
     <!-- Parte Superior -->
@@ -107,6 +108,52 @@
 
         <section id="ambiente">
             <h2>Ambiente</h2>
+            <p>Espaço é pensado para o seu conforto com: iluminação natural, WI-FI gratuito e tomadas em todas as mesas.</p>
+            <img src="imagens/cafeteria.jpg" alt="CAFÉÉÉÉ">
+        </section>
+
+        <section id="Horario">
+            <h2>Horário de Funcionamento</h2>
+            <table class="horario-funcionamento">
+                <thead>
+                    <th>Dia</th>
+                    <th>Horário</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Segunda a Sexta</td>
+                        <td>07h às 20h</td>
+                    </tr>
+                    <tr>
+                        <td>Sábado</td>
+                        <td>08h às 22h</td>
+                    </tr>
+                    <tr>
+                        <td>Domingo</td>
+                        <td>08h às 14h</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="Reserva">
+            <h2>Reserva sua mesa!</h2>
+            <p>Preencha o formulário abaixo para fazer a Reserva da sua mesa</p>
+            <form action="">
+                <label for="nome">Nome</label>
+                <input type="text" id="nome" placeholder="Seu nome completo">
+
+                <label for="email">E-mail</label>
+                <input type="email" id="nome" placeholder="ricardo@senacsp.C#.senac">
+
+                <label for="nome">Número de pessoas</label>
+                <input type="number" id="pessoas" placeholder="Ex.: 4">
+
+                <label for="nome">Observações</label>
+                <textarea id="obs" rows="3" placeholder="Horário desejado, aniversário, etc"></textarea>
+
+                <button type="submit">Reservar</button>
+            </form>
         </section>
     </main>
 </body>

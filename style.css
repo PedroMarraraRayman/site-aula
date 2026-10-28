@@ -3,6 +3,17 @@
 * {
     margin: 0; /* Margem externa = 0 */
     padding: 0; /* Margem interna = 0 */
+    box-sizing:border-box; 
+    /* 
+        Content box -> soma os expaços e expande 
+        border-box -> soma todos os espaços e reduz (conteúdo + espaços)   
+        
+    ricardo{
+        C#{
+            👍
+        }
+    }
+    */
 }
 
 /* Variáveis para paleta de cores */
@@ -20,6 +31,10 @@
     --cor-sombra: rgba(0, 0, 0, 0.2);
     --cor-text: #333333;
     --cor-texto-creme: #e6d7c3;
+}
+.horario-funcionamento td{
+    border: none;
+    border-bottom: 1px solid var(--cor-borda-tabela);    
 }
 
 /* Regra de Formatação ╰(*°▽°*)╯ */
@@ -53,12 +68,8 @@ nav a {
 nav a:hover{
     background-color: var(--cor-marrom-hover);
 }
-img {
-    display: block;
-    margin-top: 10px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 800px;
+section img{
+    width: 100%;
 }
 main {
     width: 900px;               /* Largura de um bloco */
@@ -123,6 +134,28 @@ th {
 /* Formatação de tabela */
 
 
+form label{
+    display: block;
+    margin: 10px 0px 4px;
+}
+form input, form textarea{
+    width: 100%;
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid var(--cor-borda-tabela);
+}
+form button{
+    margin-top: 15px;
+    border: none;
+    background-color: var(--cor-marrom-medio);
+    color: var(--cor-branco);
+    padding: 12px 24px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+form button:hover{
+    background-color: var(--cor-marrom-hover);
+}
 /* .default_margin {
     display: inline-block;
 
