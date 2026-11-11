@@ -1,3 +1,4 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.2/font/bootstrap-icons.min.css");
 /* CSS RESET usando o caractere curinga (*) */
 
 * {
@@ -32,6 +33,9 @@
     --cor-text: #333333;
     --cor-texto-creme: #e6d7c3;
 }
+
+
+
 .horario-funcionamento td{
     border: none;
     border-bottom: 1px solid var(--cor-borda-tabela);    

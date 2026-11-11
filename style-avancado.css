@@ -17,10 +17,14 @@
         transform: translate(0);
     }
 }
+
+
+/* No flex boxesta regra é o elemento PAI*/
 .diferenciais{
     display: flex;
     gap: 20px;
 }
+/* no flexbox esta regra é um elemento FILHO*/
 .diferencial{
     flex: 1;
     background-color: var(--cor-fundo-experiencia);
@@ -29,4 +33,28 @@
     border-radius: 10px;
     padding: 20px;
     text-align: center;
+}
+.diferencial::before{
+    display: block;
+    font-family:"bootstrap-icons";
+    font-size: 2.2rem;
+    color: var(--cor-marrom-medio);
+    margin-bottom: 10px;
+}
+ /* ::before é um pseudo-elemento - atua sobre uma parte específica de uma tag html */
+/* iniciar a formatação dos ícones */
+.icone-grao::before{
+    content: "\F3CD";
+}
+.icone-fogo::before{
+    content: "\F7F6";
+}
+.icone-wifi::before{
+    content: "\F61C";
+}
+/* Regras para layout responsivo */
+@media (max-width: 600px){
+    .diferenciais {
+        flex-direction: column;
+    }
 }
