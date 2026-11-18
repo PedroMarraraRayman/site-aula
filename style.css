@@ -45,7 +45,13 @@
 body{
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: var(--cor-fundo-pagina);
-}
+    /* cursor: url(imagens/ArrowCursor.png) 0 0, auto;*/
+} 
+/* a,
+button,
+[role="button"]{
+    cursor: url("imagens/ArrowFarCursor.png") 0 0, pointer;
+}  */
 header {
     background-color: var(--cor-marrom-escuro);
     color: var(--cor-branco);
